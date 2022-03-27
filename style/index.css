@@ -307,7 +307,7 @@ h5{
 
 /* Domains */
 
-.domainswehave .ML, .web-dev{
+.domainswehave .ML, .web-dev, .cp{
     background-color: #f0fcff;
     width: 100%;
 }
@@ -341,7 +341,20 @@ h5{
     text-align: center;
     color: #e62309b7;
 }
-
+.ui-ux .domain-header{
+    font-size: 3.5rem;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: #8512e4b7;
+}
+.cp .domain-header{
+    font-size: 3.5rem;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: #e26e0eb7;
+}
 
 .flex_divide{
     display: flex;
