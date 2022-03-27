@@ -1,0 +1,384 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+/* UTILITIES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   }
+   body {
+    font-family: cursive;
+   }
+   a {
+    text-decoration: none;
+   }
+   li {
+    list-style: none;
+   }
+
+
+
+/* NAV BAR */
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    font-family: 'Varela Round', sans-serif;
+    font-weight: 600;
+    /* background-color: rgb(141, 151, 180); */
+   }
+   .nav-links a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+   }
+   /* LOGO */
+   .logo  img{
+    width: 100%;
+    border-radius: 25px;
+    background-color: #ffffff;
+    padding-left: 5%;
+   }
+
+    
+   /* NAVBAR MENU */
+   .menu {
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+   }
+   .menu li a:hover {
+       border-radius: 5px;
+       animation: logo-animation 5s ease-in-out infinite;
+       transition: 0.3s ease;
+}
+
+@keyframes logo-animation {
+    0% {color: #EA4335;}
+    25%{color: #4285F4;}
+    50%{color: #34A853;}
+    75%{color: #FBBC05;}
+    100% {color: #EA4335;}
+  }
+
+   .menu li {
+    padding: 5px 14px;
+   }
+   /* DROPDOWN MENU */
+   .events_menu {
+    position: relative; 
+   }
+   .dropdown {
+    background-color: rgb(238, 252, 255);
+    padding: 1em 0;
+    position: absolute; /*WITH RESPECT TO PARENT*/
+    display: none;
+    border-radius: 8px;
+    top: 35px;
+   }
+   .dropdown li + li {
+    margin-top: 10px;
+   }
+   .dropdown li {
+    padding: 0.5em 1em;
+    width: 8em;
+    text-align: center;
+   }
+   .dropdown li:hover {
+    background-color: #c0f3fa;
+   }
+   .events_menu:hover .dropdown {
+    display: block;
+   }
+   .menu .btn{
+    background-color: #0961e6b7;
+    border: none;
+    border-radius: 8px;
+    padding: 0.5em 1em;
+    font-size: 18px;
+    cursor: pointer;
+    color: #ffffff;
+   }
+   .menu .btn{
+    color: #0961e6b7;
+   }
+   .menu button:hover{
+    background-color: #0961e6b7;
+   }
+/*RESPONSIVE NAVBAR MENU STARTS*/
+/* CHECKBOX HACK */
+input[type=checkbox]{
+    display: none;
+   } 
+   /*HAMBURGER MENU*/
+   .hamburger {
+    display: none;
+    font-size: 24px;
+    user-select: none;
+   }
+   /* APPLYING MEDIA QUERIES */
+   @media (max-width: 768px) {
+   .menu { 
+    display:none;
+    position: absolute;
+    background-color:rgb(241, 252, 252);
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding: 16px 0;
+   }
+   .menu li:hover {
+    display: inline-block;
+    background-color:#dcffff;
+    transition: 0.3s ease;
+   }
+   .menu li + li {
+    margin-top: 12px;
+   }
+   input[type=checkbox]:checked ~ .menu{
+    display: block;
+   }
+   .hamburger {
+    display: block;
+   }
+   .dropdown {
+    left: 50%;
+    top: 30px;
+    transform: translateX(35%);
+   }
+   .dropdown li:hover {
+    background-color: #689c9c;
+   }
+   }
+
+
+/* HOME */
+
+#home{
+    font-family: 'Varela Round', sans-serif;
+    height: 70%;
+    background-color: #f0fcff;
+    background-image: url(/assets/world.svg);
+}
+
+
+
+.intro_para{
+    font-size: 150%;   
+}
+.col{
+    width: 50%;
+}
+.row{
+
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 1em;
+}
+.col img{
+    padding-left: 5%;
+    width: 100%;
+    height: 100%;
+    border-radius: 5% 5% 5% 5%;
+}
+
+@media screen and (max-width: 1200px){
+.col img{
+    padding-left: 5%;
+    width: 100%;
+    height: 100%;
+    border-radius: 5% 5% 5% 5%;
+}
+}
+@media screen and (max-width: 1001px) {
+    .row{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .col{
+        width: 100%;
+    }
+    .col img{
+        display: none;
+    }
+}
+    
+
+/* WHAT TO EXPECT */
+
+.container{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+#whattoexpect {
+    /* font-size: 1.5rem; */
+    font-weight: 200;
+    background-color: white;
+    padding: 4rem;
+    text-align: center;
+}
+#whattoexpect span{
+    font-size: 5rem;
+    font-weight: 600;
+    font-family: 'Varela Round', sans-serif;
+    text-align: center;
+    color: #0961e6b7;
+}
+#moreondsc img {
+    max-width: 100%;
+    /* max-height: 400px; */
+    text-align: center;
+}
+
+.outer-div {
+    position: relative;
+}
+
+.guy-1,
+.guy-2 {
+    display: none;
+    position: absolute;
+    max-height: 600px;
+}
+
+.guy-1 {
+    left: 10px;
+    top: 100px;
+}
+
+.guy-2 {
+    right: 10px;
+    top: 100px;
+}
+
+.whattoexpect-item {
+    z-index: 100;
+    min-height: 50px;
+    padding: 2rem !important;
+    margin: 1rem;
+    -webkit-box-shadow: 10px 8px 47px -14px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 10px 8px 47px -14px rgba(0, 0, 0, 0.3);
+    box-shadow: 10px 8px 47px -14px rgba(0, 0, 0, 0.3);
+}
+
+h5{
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.about_img img{
+    margin-top: 2rem;
+    display: block; 
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    height: 40%;
+    border-radius: 5%;
+}
+
+@media screen and (min-width: 1270px) {
+    .guy-1,
+    .guy-2 {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    
+    #whattoexpect
+    footer {
+        font-size: 1rem;
+        padding: 2.5rem 1rem 2.5rem 1rem !important;
+    }
+    
+}
+
+@media screen and (max-width: 993px){
+    .about_img img{
+        width: 60%;
+        height: 60%;
+    }
+}
+
+/* Domains */
+
+.domainswehave .ML, .web-dev{
+    background-color: #f0fcff;
+    width: 100%;
+}
+
+.domainswehave .container .heading{
+    font-size: 5rem;
+    font-weight: 600;
+    font-family: 'Varela Round', sans-serif;
+    text-align: center;
+    color: black;
+}
+
+.ML .domain-header{
+    font-size: 3.5rem;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: #0961e6b7;
+}
+.mob-dev .domain-header{
+    font-size: 3.5rem;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: #1ba50ee1;
+}
+.web-dev .domain-header{
+    font-size: 3.5rem;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: #e62309b7;
+}
+
+
+.flex_divide{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+.flex_divide .content{
+    width: 60%;
+    padding: 6rem;
+}
+.domain-desc{
+    font-size: 2.5rem;
+    font-weight: 400;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: black;
+}
+.flex_divide .image{
+    width: 40%;
+    padding: 1rem;
+}
+
+.flex_divide .image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5%;
+    align-self: center;
+}
+
+@media screen and (max-width: 770px){
+    .flex_divide .image img{
+        width: 70%;
+        height: 70%;
+        border-radius: 5%;
+        align-self: center;
+    }
+}
+    
