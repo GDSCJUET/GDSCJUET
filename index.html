@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Google Developer Student Club - JUET</title>
+    <title>GDSC - JUET</title>
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="./img_juet/GDSC JUET Logo x1.png">
+    <link rel="shortcut icon" href="./img_juet/GDSC Profile IMG.png">
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -21,12 +21,12 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./style/index.css">
 
-    <!-- AOS CSS -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- OWL Carousal -->
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
 
-    <!-- AOS JS -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
-
+    <script src="jquery.min.js"></script>
+    <script src="owlcarousel/owl.carousel.min.js"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -61,33 +61,35 @@
       
       <nav class="navbar">
         <!-- LOGO -->
-        <div class="logo"> <img src="./img_juet/DSC Jaypee University of Engineering and Technology Light Horizontal-Logo.png" alt="" srcset=""> </div>
+        <div class="logo"> <img src="./img_juet/DSC Jaypee University of Engineering and Technology Light Horizontal-Logo.png" alt="" srcset="">
+        </div>
         <!-- NAVIGATION MENU -->
-        <ul class="nav-links">
+        <div class="nav-menu">
+          <ul class="nav-links">
             <!-- USING CHECKBOX HACK -->
             <input type="checkbox" id="checkbox_toggle" />
             <label for="checkbox_toggle" class="hamburger">&#9776;</label>
             <!-- NAVIGATION MENUS -->
             <div class="menu">
-                <li><a href="/">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="/">Team</a></li>
-                <li class="events_menu">
-                <a href="/">Events</a>
+              <li><a href="body">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#team">Team</a></li>
+              <li class="events_menu">
+                <a href="#events">Events</a>
                 <!-- DROPDOWN MENU -->
-                    <ul class="dropdown">
-                        <li><a href="/">2021</a></li>
-                        <li><a href="/">2022</a></li>
-                    </ul>
-                </li>
-                <li><a href="/">Blogs</a></li>
-                <li><a href="/">FAQ</a></li>
-                <li><a href="/">Contact</a></li>
-                <button class="btn btn-primary" id="btn_signup"> <a href="https://gdsc.community.dev/jaypee-university-of-engineering-and-technology-guna/">Join Us</a></button>
+                <ul class="dropdown">
+                  <li><a href="/">2021</a></li>
+                  <li><a href="/">2022</a></li>
+                </ul>
+              </li>
+              <li><a href="/">Blogs</a></li>
+              <li><a href="/">FAQ</a></li>
+              <li><a href="/">Contact</a></li>
+              <button class="btn btn-primary" id="btn_signup"> <a href="https://gdsc.community.dev/jaypee-university-of-engineering-and-technology-guna/">Join Us</a></button>
             </div>
-        </ul>
-    </nav> 
-    
+          </ul>
+        </div>  
+      </nav> 
 
     </section>
     <section id="home">
@@ -95,8 +97,8 @@
             <div class="row">
                 <div class="col align-self-start">
                     <div class="home-content">
-                        <h1>Google Developer Student Club</h1>
-                        <h2><b>Jaypee University of Engineering and Technology</b></h2>
+                        <h1><b>Google Developer Student Club</b></h1>
+                        <h2>Jaypee University of Engineering and Technology</h2>
                         <p>
                             <span class="intro_para">
                                 <span class="page__content">A community of<span style="color: rgb(15, 157, 88); font-weight: bolder;"> Developers</span>,<span style="color: rgb(219, 68, 55); font-weight: bolder;"> Designers</span> and<span style="color: rgb(66, 133, 244); font-weight: bolder;"> Programmers </span>who grow their knowledge in a peer-to-peer learning environment and build solutions for local businesses and their community.</span>
@@ -114,6 +116,8 @@
     </section>
     <br>
     <hr>
+
+
     <section id="about">
 
         <div class="outer-div">
@@ -154,6 +158,7 @@
         </div>
     </section>
     <hr>
+    
     <section id="domains">
       <div class="domainswehave">
         <div class="container">
@@ -174,8 +179,7 @@
               <div class="image">
                 <img src="./assets/ML_1.png" alt="">
             </div>
-            </div>
-            
+            </div>           
             <div class="flex_divide mob-dev">
               <div class="image">
                 <img src="./assets//appDevelopment.e52a9c34ef4d61fe4012ebc2960ca875.svg" alt="">
@@ -187,7 +191,6 @@
                 </p> 
               </div>
             </div>
-
             <div class="flex_divide web-dev">
               <div class="content">
                 <h2 class="domain-header">Web Development</h2>
@@ -196,12 +199,37 @@
                 </p> 
               </div>
               <div class="image">
-                <img src="./assets/web-d.gif" alt="">
+                <img src="./assets/web-dev-2.gif" alt="">
             </div>
+            </div>
+            <div class="flex_divide cloud">
+              <div class="image">
+                <img src="./assets/cloudshit.gif" alt="">
+              </div>
+              <div class="content">
+                <h2 class="domain-header">Cloud Computing</h2>
+                <p class="domain-desc">
+                  Cloud Computing has become the backbone of many IT solutions and
+                   operations for the past decade. And it will continue to do so for the coming years. 
+                   It appears that the demand for skills in Cloud computing has been on the 
+                   rise with no signs of slowing down thus we aim to learn and create cloud based solutions for applications. 
+                </p> 
+              </div>
+            </div>
+            <div class="flex_divide blockchain">
+              <div class="content">
+                <h2 class="domain-header">Blockchain </h2>
+                <p class="domain-desc">
+                  Mobile app development has been steadily growing, in revenues and jobs created. In this domain and all others, we encourage all to keep practising and learning all the new upcoming things and be their best selves..
+                </p> 
+              </div>
+              <div class="image">
+                <img src="./assets/blockchain tech.gif" alt="">
+              </div>
             </div>
             <div class="flex_divide ui-ux">
               <div class="image">
-                <img src="./assets//appDevelopment.e52a9c34ef4d61fe4012ebc2960ca875.svg" alt="">
+                <img src="./assets/uiux2.213e73ad01b66c98fb8d56a7e7434278.svg" alt="">
               </div>
               <div class="content">
                 <h2 class="domain-header">UI/UX Designing</h2>
@@ -218,29 +246,50 @@
                 </p> 
               </div>
               <div class="image">
-                <img src="./assets//appDevelopment.e52a9c34ef4d61fe4012ebc2960ca875.svg" alt="">
+                <img src="./assets/cp.png" alt="">
               </div>
             </div>
 
-
-
-          </div>
+         </div>
         </div>
       </div>
     </section>
+    <br>
+    <hr>
     <section id="events">
+      
+      <div class="container">
+        <div class="heading">
+          <h2>Upcoming Events</h2>
+        </div>
+        <div class="owl-carousel">
+          <div> Your Content </div>
+          <div> Your Content </div>
+          <div> Your Content </div>
+          <div> Your Content </div>
+          <div> Your Content </div>
+          <div> Your Content </div>
+          <div> Your Content </div>
+        </div>
+      </div>
     
     </section>
     <section id="sponsors">
-
+      
     </section>
     <section id="contact">
 
     </section>
     <section id="footer">
-
+      
     </section>
-
+    
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/CSSRulePlugin3.min.js"></script>
+    
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.2/CSSRulePlugin.min.js"></script> -->
+    <script src="script.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
