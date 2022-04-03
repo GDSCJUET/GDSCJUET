@@ -18,6 +18,13 @@
    }
    
 
+body{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scrollbar-face-color: #EA4335;
+}
+
+
 
 /* NAV BAR */
 
@@ -39,11 +46,11 @@
    }
    /* LOGO */
    .logo {
-    width: inherit;
+    width: 20%;
     height: inherit;
     border-radius: 25px;
     background-color: #ffffff;
-    padding-left: 5%;
+    padding-left: 3%;
    }
    .logo  img{
     width: 70%;
@@ -53,6 +60,8 @@
 
     
    /* NAVBAR MENU */
+
+
    .menu {
     display: flex;
     gap: 1em;
@@ -765,8 +774,14 @@ ul a {
 	transition: 0.3s;
 }
 
-ul a:hover {
-	color: #ff9800;
+.foot1 a:hover {
+	color: #007be0;
+}
+.foot2 a:hover {
+	color: #e03400;
+}
+.foot3 a:hover {
+	color: #f3bc09;
 }
 
 ul li {
@@ -825,3 +840,56 @@ li i {
 		width: 100%;
 	}
 }
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+.footercpy {
+    width: vw;
+    height: 2rem;
+    background: #000000;
+    color: white;
+}
+.footercpy h5{
+    padding-top: 3px;
+    margin: auto;
+    text-align: center;
+    font-family: 'Roboto Mono', monospace; 
+}
+
+.footercpy span{
+    color: red;
+    background: #000000;
+}
+
+
+
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #000000;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    /* background: rgb(255, 255, 255); */
+    animation: logo-animation 5s infinite;
+}
+
+
+
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    animation: logo-animation 5s ease-in-out infinite;
+    transition: 0.3s ease;
+  }
+  
+  @keyframes logo-animation {
+    0% {background: #EA4335;}
+    25%{background: #4285F4;}
+    50%{background: #34A853;}
+    75%{background: #FBBC05;}
+    100% {background: #EA4335;}
+  }

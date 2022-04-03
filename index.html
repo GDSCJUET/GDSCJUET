@@ -41,17 +41,15 @@
     <!-- AOS -Animate On Scroll Lib -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     
-    <!-- Google Analytics -->
-    <!-- <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-G32E9ZLMKV"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-        ga('create', 'UA-86912022-1', 'auto');
-        ga('send', 'pageview');
-    </script> -->
-
+      gtag('config', 'G-G32E9ZLMKV');
+    </script>
 </head>
 <body>
     
@@ -297,7 +295,7 @@
         </div>  
         <div class="carousel-container">
           <div class="mySlides animate">
-            <img src="./img_juet/Developer Student Clubs.png" alt="slide" />
+            <img src="./members/FlutterFestivals_AdditionalBanners_2048x1152.png" alt="slide" />
             <!-- <div class="number">1 / 5</div> -->
             <button class="text">Register Now!</button>
           </div>
@@ -369,23 +367,22 @@
           <div class="footer-items">
             <h3>Programs</h3>
             <div class="border1"></div> 
-              <ul> 
-                <a href="#"><li>Woman Techmakers</li></a>
-                <a href="#"><li>Google Developer Experts</li></a>
-                <a href="#"><li>Google Developer Groups</li></a>
-               <a href="#"><li>About</li></a>
+              <ul class="foot1"> 
+                <a href="https://www.womentechmakers.com/"><li>Woman Techmakers</li></a>
+                <a href="https://developers.google.com/community/experts?utm_source=devtools"><li>Google Developer Experts</li></a>
+                <a href="https://developers.google.com/community/gdg?utm_source=devtools"><li>Google Developer Groups</li></a>
               </ul>
           </div>
       
       <!--  for some other links -->
           <div class="footer-items">
-            <h3>Developerss</h3>
+            <h3>Developers</h3>
             <div class="border1"></div>  <!--for the underline -->
-              <ul>
-                <a href="#"><li>Firebase Console</li></a>
-                <a href="#"><li>Google Cloud Platform</li></a>
-                <a href="#"><li>Actions on Google</li></a>
-                <!-- <a href="#"><li>Italian</li></a> -->
+              <ul class="foot2">
+                <a href="https://console.firebase.google.com/"><li>Firebase Console</li></a>
+                <a href="https://console.cloud.google.com/"><li>Google Cloud Platform</li></a>
+                <a href="https://console.actions.google.com/"><li>Actions on Google</li></a>
+                
               </ul>
           </div>
       
@@ -393,11 +390,9 @@
           <div class="footer-items">
             <h3>Contribute</h3>
             <div class="border1"></div>
-              <ul>
-                <li></li>
-                <li>View Source</li>
-                <!-- <li><i class="fa fa-phone" aria-hidden="true"></i>123456789</li> -->
-                <li>File a Bug</li>
+              <ul class="foot3">
+                <a href="https://github.com/GDSCJUET/GDSCJUET.github.io"><li>View Source</li></a>
+                <a href="https://github.com/GDSCJUET/GDSCJUET.github.io/issues/new/choose"><li>File a Bug</li></a>
               </ul> 
             
       <!--   for social links -->
@@ -410,9 +405,14 @@
         </div>
         
      
-      
+    
 
     </section>
+    <div class="footercpy">
+      <div class="material">
+        <h5>Engineered with <span>&#x2764</span> by Dev Team | All Rights Reserved by GDSC@JUET</h6>
+      </div>
+    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="StyleiTechFooter.js"></script>
     
