@@ -46,7 +46,7 @@ function showSlides() {
 }
 
 // autoplay slides --------
-let timer = 5; // sec
+let timer = 7; // sec
 const _timer = timer;
 
 // this function runs every 1 second
