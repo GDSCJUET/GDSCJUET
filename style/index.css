@@ -24,42 +24,44 @@
 .navbar {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+
     font-family: 'Varela Round', sans-serif;
     font-weight: 600;
     /* background-color: rgb(141, 151, 180); */
     -webkit-animation: fadeIn 2s alternate 1;
     animation: fadeIn 3s alternate 1;
+    /* gap: 10%; */
    }
 
    .nav-links a {
     color: rgb(0, 0, 0);
     text-decoration: none;
-   }
-   /* LOGO */
-   .logo {
-    width: inherit;
-    height: inherit;
-    border-radius: 25px;
-    background-color: #ffffff;
-    padding-left: 5%;
-   }
-   .logo  img{
-    width: 70%;
-    height: 70%;
-    border-radius: 25px;
-   }
-
     
-   /* NAVBAR MENU */
-   .menu {
+   }
+   
+   
+/* NAVBAR MENU */
+.nav-menu{
     display: flex;
-    gap: 1em;
+    align-items: center;
+    justify-content: flex-end;
+    width: 80vw;
+    height: 100%;
+
+}
+.nav-links{
+    justify-self: flex-end;
+}
+.menu {
+    padding: 14px 0;
+    display: flex;
+    justify-self: flex-end;
+    /* gap: 1em; */
     font-size: 18px;
    }
-   .menu li a:hover {
-       border-radius: 5px;
+.menu li a:hover {
        animation: logo-animation 5s ease-in-out infinite;
        transition: 0.3s ease;
 }
@@ -70,38 +72,38 @@
     50%{color: #34A853;}
     75%{color: #FBBC05;}
     100% {color: #EA4335;}
-  }
+}
 
-   .menu li {
+.menu li {
     padding: 5px 14px;
-   }
+}
    /* DROPDOWN MENU */
-   .events_menu {
+.events_menu {
     position: relative; 
-   }
-   .dropdown {
+}
+.dropdown {
     background-color: rgb(238, 252, 255);
     padding: 1em 0;
     position: absolute; /*WITH RESPECT TO PARENT*/
     display: none;
     border-radius: 8px;
     top: 35px;
-   }
-   .dropdown li + li {
+}
+.dropdown li + li {
     margin-top: 10px;
-   }
-   .dropdown li {
+}
+.dropdown li {
     padding: 0.5em 1em;
     width: 8em;
     text-align: center;
-   }
-   .dropdown li:hover {
+}
+.dropdown li:hover {
     background-color: #c0f3fa;
-   }
-   .events_menu:hover .dropdown {
+}
+.events_menu:hover .dropdown {
     display: block;
-   }
-   .menu .btn{
+}
+.menu .btn{
     background-color: #0961e6b7;
     border: none;
     border-radius: 8px;
@@ -109,62 +111,87 @@
     font-size: 18px;
     cursor: pointer;
     color: #ffffff;
-   }
-   .menu .btn{
+}
+.menu .btn{
     color: #0961e6b7;
-   }
-   .menu button:hover{
+}
+.menu button:hover{
     background-color: #00d9ff;
-   }
-   .menu .btn a{
+}
+.menu .btn a{
     color: #dcffff;
-   }
+}
 /*RESPONSIVE NAVBAR MENU STARTS*/
 /* CHECKBOX HACK */
 input[type=checkbox]{
     display: none;
-   } 
-   /*HAMBURGER MENU*/
-   .hamburger {
+} 
+/*HAMBURGER MENU*/
+.hamburger {
     display: none;
     font-size: 24px;
     user-select: none;
-   }
-   /* APPLYING MEDIA QUERIES */
-   @media (max-width: 768px) {
-   .menu { 
-    display:none;
-    position: absolute;
-    background-color:rgb(241, 252, 252);
-    right: 0;
-    left: 0;
-    text-align: center;
-    padding: 16px 0;
-   }
-   .menu li:hover {
-    display: inline-block;
-    background-color:#dcffff;
-    transition: 0.3s ease;
-   }
-   .menu li + li {
-    margin-top: 12px;
-   }
-   input[type=checkbox]:checked ~ .menu{
-    display: block;
-   }
-   .hamburger {
-    display: block;
-   }
-   .dropdown {
-    left: 50%;
-    top: 30px;
-    transform: translateX(35%);
-   }
-   .dropdown li:hover {
-    background-color: #689c9c;
-   }
-   }
+}
 
+
+/* LOGO */
+.logo {
+ width: 20vw ;
+ /* background-color: #d13737; */
+}
+.logo  img{
+ width: 120%;
+ height: auto;
+}
+
+
+
+
+/* APPLYING MEDIA QUERIES */
+@media Screen and (max-width: 850px) {
+    .navbar{
+        padding: px;
+        width: 100%;
+        height: 60px;
+        
+    }
+    
+    .navbar .logo{
+        width: 90%;
+        height:    auto;
+        
+    }
+    .navbar .logo img{
+        width: 100%;
+        height: 100%;
+    }
+
+   
+    .menu { 
+        display:none;
+        position: absolute;
+        background-color:rgb(241, 252, 252);
+        right: 0;
+        left: 0;
+        text-align: center;
+        padding: 16px 0;
+    }
+    .menu li:hover {
+        display: inline-block;
+        transition: 0.3s ease;
+        text-decoration: none;
+    }
+    .menu li + li {
+        margin-top: 12px;
+    }
+    input[type=checkbox]:checked ~ .menu{
+        display: block;
+    }
+    .hamburger {
+        display: block;
+    }
+    
+}
 
 
 /* HOME */
@@ -733,7 +760,7 @@ color: #000000;
 
 .footer-items p {
 	font-size: 16px;
-	text-align: justify;
+	text-align: center;
 	line-height: 25px;
 	color: rgb(0, 0, 0);
 }
