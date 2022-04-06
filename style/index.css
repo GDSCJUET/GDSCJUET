@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display:700');
+@import url('https://fonts.googleapis.com/css2?family=Teko&display=swap');
+
 /* UTILITIES */
 * {
     margin: 0;
@@ -15,6 +16,7 @@
    }
    html{
        scroll-behavior: smooth;
+       overflow-x: hidden;
    }
    
 
@@ -170,7 +172,7 @@ input[type=checkbox]{
     .menu { 
         display:none;
         position: absolute;
-        background-color:rgb(241, 252, 252);
+        background-color:rgb(255, 255, 255);
         right: 0;
         left: 0;
         text-align: center;
@@ -186,6 +188,7 @@ input[type=checkbox]{
     }
     input[type=checkbox]:checked ~ .menu{
         display: block;
+        
     }
     .hamburger {
         display: block;
@@ -347,15 +350,7 @@ h5{
     }
 }
 
-@media screen and (max-width: 1023px) {
-    
-    #whattoexpect
-    footer {
-        font-size: 1rem;
-        padding: 2.5rem 1rem 2.5rem 1rem !important;
-    }
-    
-}
+
 
 @media screen and (max-width: 993px){
     .about_img img{
@@ -433,9 +428,10 @@ h5{
     color: black;
 }
 .flex_divide .image{
-    width: 50%;
+    width: 30%;
     padding: 1rem;   
     align-items: center;
+    display: flex;
 }
 
 .flex_divide .image img{
@@ -465,9 +461,11 @@ h5{
 
 @media screen and (max-width: 423px){
     .domainswehave .container .heading{
-        font-size: 2rem;
+        font-size: 2.2rem;
     }
-    
+    .domain-header{
+        font-size: 2.1rem;
+    }
 }
 @media screen and (max-width: 470px){
     .flex_divide .content{
@@ -548,7 +546,7 @@ h5{
 }
 
 #events .heading span{
-    font-size: 40px;
+    font-size: 4rem;
     font-weight: 600;
     font-family: 'Varela Round', sans-serif;
     text-align: center;
@@ -674,57 +672,20 @@ h5{
     transform: scale(1) rotateY(0deg);
   }
 }
-#footer .container .columns{
-height: 100px;
-color: #000000;
 
+
+@media screen and (max-width: 993px){
+    #events .heading span{
+        font-size: 3rem;
+    }   
 }
 
-#footer .container .columns .links h1{
-    font-family: "Playfair Display", serif;
+@media screen and (max-width: 423px){
+    #events .heading span{
+        font-size: 2.2rem;
+    }
 }
-
-
-
-
-/* FANCY Animation */
-
-
-@import url("https://fonts.googleapis.com/css?family=Raleway:300");
-
-
-
-#footer h1 {
-  text-transform: uppercase;
-  
-}
-#footer h1 {
-  -webkit-animation: fadeIn 2s alternate infinite;
-          animation: fadeIn 2s alternate infinite;
-  opacity: 0;
-}
-
-@-webkit-keyframes fadeIn {
-  0% {
-    opacity: 0;
-    filter: blur(10px);
-  }
-  50%, 100% {
-    opacity: 1;
-    filter: blur(0px);
-  }
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-    filter: blur(10px);
-  }
-  50%, 100% {
-    opacity: 1;
-    filter: blur(0px);
-  }
-}
+    
 
 
 
@@ -768,6 +729,7 @@ color: #000000;
 .footer-items h1 {
 	color: rgb(0, 0, 0);
 }
+
 
 .border1 {
 	height: 3px;
@@ -829,12 +791,17 @@ li i {
 	transform: scale(1.5);
 }
 
-.footer-bottom {
+.footerclose{
 	padding: 10px;
-	background: #ffffff;
-	color: rgb(0, 0, 0);
+    margin: 0%;
+	background: #000000;
+	color: rgb(255, 255, 255);
 	font-size: 12px;
 	text-align: center;
+    padding-bottom: 0%;
+    font-family: 'Teko', sans-serif;
+    letter-spacing: 2px;
+    height: 30px;
 }
 
 /* for tablet mode view */
@@ -851,5 +818,16 @@ li i {
 	.footer-items {
 		width: 100%;
 	}
+    .cprimg{
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+    }
+    .cprimg img{
+        width: 70%;
+        height: auto;
+        margin: auto;
+    }
+    
 }
 

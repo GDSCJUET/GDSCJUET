@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display:700');
+@import url('https://fonts.googleapis.com/css2?family=Teko&display=swap');
+
+
 /* UTILITIES */
 * {
     margin: 0;
@@ -22,6 +24,7 @@
 /* NAV BAR */
 
 .navbar {
+    /* position: fixed;  */
     display: flex;
     align-items: center;
     padding-left: 30px;
@@ -29,10 +32,11 @@
 
     font-family: 'Varela Round', sans-serif;
     font-weight: 600;
-    /* background-color: rgb(141, 151, 180); */
+    background-color: rgb(255, 255, 255);
     -webkit-animation: fadeIn 2s alternate 1;
     animation: fadeIn 3s alternate 1;
     /* gap: 10%; */
+    z-index: 1;
    }
 
    .nav-links a {
@@ -212,6 +216,9 @@ input[type=checkbox]{
     -webkit-animation: fadeIn 2s alternate 1;
     animation: fadeIn 3s alternate 1;
 }
+.header{
+    margin-top: 100px;
+}
 
 .header h1{
     font-family: 'Varela Round', sans-serif;
@@ -285,7 +292,7 @@ input[type=checkbox]{
     margin-bottom: 10px;
 } 
 #team .cards .members .text h5{
-    font-family: 'Zilla Slab', serif;
+    font-family: 'Varela Round', sans-serif;
     font-size: 20px;
     color: rgb(0, 0, 0);
     text-align: center;
@@ -309,6 +316,31 @@ input[type=checkbox]{
     border-style: inset;
     box-shadow: #57b3b3 0px 0px 10px;
 }
+
+
+
+@media (max-width:480px) {
+    #team{
+        padding: 10px;
+        
+    }
+    #team .card-main{
+        border-radius: 20px;
+        padding-top: 5%;
+    }
+    #team .cards .members .photo{
+        width: 100%;
+        height: auto;
+    }
+    .header h1{
+        font-size: 30px;
+    }
+    
+    .header p{
+        font-size: 15px;
+    }
+}
+
 
 
 
@@ -412,12 +444,17 @@ li i {
 	transform: scale(1.5);
 }
 
-.footer-bottom {
+.footerclose{
 	padding: 10px;
-	background: #ffffff;
-	color: rgb(0, 0, 0);
+    margin: 0%;
+	background: #000000;
+	color: rgb(255, 255, 255);
 	font-size: 12px;
 	text-align: center;
+    padding-bottom: 0%;
+    font-family: 'Teko', sans-serif;
+    letter-spacing: 2px;
+    height: 30px;
 }
 
 /* for tablet mode view */
