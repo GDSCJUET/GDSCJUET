@@ -1,0 +1,12 @@
+#blogs{
+    display: flex;
+    /* height: 100vh; */
+    /* width: 100%; */
+    align-items: center;
+    justify-content: center;
+
+}
+#blogs img{
+    margin: 0px;
+    padding: 0px;
+}

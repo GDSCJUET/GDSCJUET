@@ -18,23 +18,32 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i" rel="stylesheet">
     
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="./style/index.css">
     
     <!-- OWL Carousal (Didnt USED)-->
     <!-- <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
-    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
-     -->
+      <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+    -->
     <!-- <script src="jquery.min.js"></script>
-    <script src="owlcarousel/owl.carousel.min.js"></script> -->
-    <!-- Jquery and Bootstrap 3.3.7   -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    
+      <script src="owlcarousel/owl.carousel.min.js"></script> -->
+      <!-- Jquery and Bootstrap 3.3.7   -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      
+      <!-- Custom CSS -->
+      <link rel="stylesheet" href="./CSS/index.css">
    
 
     <!-- AOS  -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-G32E9ZLMKV"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-G32E9ZLMKV');
+    </script>
     
 </head>
 <body>
@@ -43,7 +52,8 @@
       
       <nav class="navbar">
         <!-- LOGO -->
-        <div class="logo"> <img src="./assets/img_juet/gsdc_juet_hori_full_dark.png" alt="" srcset="">
+        <div class="logo">
+          <img src="./assets/img_juet/gsdc_juet_hori_full_dark.png" alt="" srcset="">
         </div>
         <!-- NAVIGATION MENU -->
         <div class="nav-menu">
@@ -52,10 +62,10 @@
             <input type="checkbox" id="checkbox_toggle" />
             <label for="checkbox_toggle" class="hamburger">&#9776;</label>
             <!-- NAVIGATION MENUS -->
-            <div class="menu">
+            <div class="menu menu-mob">
               <!-- <li><a href="index.html">Home</a></li> -->
               <li><a href="#about">About</a></li>
-              <li><a href="./teams.html">Team</a></li>
+              <li><a href="/pages/teams.html">Team</a></li>
               <li class="events_menu">
                 <a href="#events">Events</a>
                 <!-- DROPDOWN MENU -->
@@ -64,10 +74,10 @@
                   <li><a href="/">2022</a></li>
                 </ul> -->
               </li>
-              <!-- <li><a href="/">Blogs</a></li> -->
+              <li><a href="./pages/blogs.html">Blogs</a></li>
               <!-- <li><a href="/">FAQ</a></li> -->
               <li><a href="#footer">Contact</a></li>
-              <button class="btn btn-primary" id="btn_signup"> <a href="https://gdsc.community.dev/jaypee-university-of-engineering-and-technology-guna/">Join Us</a></button>
+              <button class="button-join" id="btn_signup"> <a href="https://gdsc.community.dev/jaypee-university-of-engineering-and-technology-guna/">Join Us</a></button>
             </div>
           </ul>
         </div>  
@@ -80,7 +90,7 @@
             <div class="row">
                 <div class="col align-self-start">
                     <div class="home-content">
-                        <h1><b>Google Developer Student Club</b></h1>
+                        <h1><b>Google Developers Student Club</b></h1>
                         <h2>Jaypee University of Engineering and Technology</h2>
                         <p>
                             <span class="intro_para">
@@ -152,9 +162,7 @@
         </div>
         <div class=" domain_con">
           <div class="domain_names container-fluid">
-
-            <div class="flex_divide ML" data-aos="fade-up" 
-     data-aos-anchor-placement="center-bottom">
+            <div class="flex_divide ML" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
               <div class="content">
                 <h2 class="domain-header">Machine Learning</h2>
                 <p class="domain-desc">
@@ -165,10 +173,9 @@
               </div>
               <div class="image">
                 <img src="./assets/machine_learning.png" alt="">
-            </div>
+              </div>
             </div>           
-            <div class="flex_divide mob-dev" data-aos="fade-up" 
-     data-aos-anchor-placement="center-bottom">
+            <div class="flex_divide mob-dev domains-bg" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
               <div class="image">
                 <img src="./assets/app_ios_dev.svg" alt="">
               </div>
@@ -181,8 +188,7 @@
                 </p> 
               </div>
             </div>
-            <div class="flex_divide web-dev" data-aos="fade-up" 
-     data-aos-anchor-placement="center-bottom">
+            <div class="flex_divide web-dev" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
               <div class="content">
                 <h2 class="domain-header">Web Development</h2>
                 <p class="domain-desc">
@@ -193,15 +199,14 @@
               </div>
               <div class="image">
                 <img src="./assets/web_dev.gif" alt="">
+              </div>
             </div>
-            </div>
-            <div class="flex_divide cloud" data-aos="fade-up" 
-     data-aos-anchor-placement="center-bottom">
+            <div class="flex_divide cloud domains-bg" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
               <div class="image">
                 <img src="./assets/cloud.gif" alt="">
               </div>
               <div class="content">
-                <h2 class="domain-header">Cloud Computing</h2>
+                <h2 class="domain-header">Cloud and DevOps</h2>
                 <p class="domain-desc">
                   Cloud Computing has become the backbone of many IT solutions and
                   operations for the past decade. And it will continue to do so for the coming years. 
@@ -210,8 +215,32 @@
                 </p> 
               </div>
             </div>
-            <div class="flex_divide blockchain" data-aos="fade-up" 
-     data-aos-anchor-placement="center-bottom">
+            <div class="flex_divide cp" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+              <div class="content">
+                <h2 class="domain-header">Competitive Programming</h2>
+                <p class="domain-desc">
+                  With ever-increasing competition in the IT industry, learn how to keep your knowledge sharp with competitive programming and practical usecases of Data Structures and Algorithms. It will enhance your problem solving skills, logic and many more.
+                </p> 
+              </div>
+              <div class="image">
+                <img src="./assets/competitive_prog.png" alt="">
+              </div>
+            </div>             
+            <div class="flex_divide ui-ux" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+              <div class="image">
+                <img src="./assets/UI_UX.svg" alt="">
+              </div>
+              <div class="content">
+                <h2 class="domain-header">UI/UX Designing</h2>
+                <p class="domain-desc">
+                  UX (user experience) and UI (user interface) are two interdependent terms.
+                  While UI generally deals with the interaction between users and computer systems,
+                  software and applications,UX deals more generally with a user's overall 
+                  experience with a brand, product or service.
+                </p> 
+              </div>
+            </div>
+            <div class="flex_divide blockchain domains-bg" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
               <div class="content">
                 <h2 class="domain-header">Blockchain </h2>
                 <p class="domain-desc">
@@ -224,35 +253,8 @@
                 <img src="./assets/blockchain_dev.gif" alt="">
               </div>
             </div>
-            <div class="flex_divide ui-ux" data-aos="fade-up" 
-     data-aos-anchor-placement="center-bottom">
-              <div class="image">
-                <img src="./assets/UI_UX.svg" alt="">
-              </div>
-              <div class="content">
-                <h2 class="domain-header">UI/UX Designing</h2>
-                <p class="domain-desc">
-                  UX (user experience) and UI (user interface) are two interdependent terms.
-                   While UI generally deals with the interaction between users and computer systems,
-                    software and applications,UX deals more generally with a user's overall 
-                   experience with a brand, product or service.
-                </p> 
-              </div>
-            </div>
-            <div class="flex_divide cp" data-aos="fade-up" 
-     data-aos-anchor-placement="center-bottom">
-              <div class="content">
-                <h2 class="domain-header">Competitive Programming</h2>
-                <p class="domain-desc">
-                  With ever-increasing competition in the IT industry, learn how to keep your knowledge sharp with competitive programming and practical usecases of Data Structures and Algorithms. It will enhance your problem solving skills, logic and many more.
-                </p> 
-              </div>
-              <div class="image">
-                <img src="./assets/competitive_prog.png" alt="">
-              </div>
-            </div>
-
-         </div>
+                      
+          </div>
         </div>
       </div>
     </section>
@@ -341,7 +343,7 @@
             <h3>Programs</h3>
             <div class="border1"></div> 
             <ul> 
-              <a href="https://www.womentechmakers.com/"><li>Women Techmakers</li></a>
+              <a href="https://www.womentechmakers.com/"><li>Woman Techmakers</li></a>
               <a href="https://developers.google.com/experts/"><li>Google Developer Experts</li></a>
               <a href="https://developers.google.com/programs/community/"><li>Google Developer Groups</li></a>
             </ul>
