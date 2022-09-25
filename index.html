@@ -1,409 +1,452 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GDSC - JUET</title>
-    
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="./img_juet/channels4_profile.jpg">
-    
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i" rel="stylesheet">
-    
-    
-    <!-- OWL Carousal (Didnt USED)-->
-    <!-- <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GDSC - JUET</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./img_juet/channels4_profile.jpg">
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i" rel="stylesheet">
+
+
+  <!-- OWL Carousal (Didnt USED)-->
+  <!-- <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
       <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
     -->
-    <!-- <script src="jquery.min.js"></script>
+  <!-- <script src="jquery.min.js"></script>
       <script src="owlcarousel/owl.carousel.min.js"></script> -->
-      <!-- Jquery and Bootstrap 3.3.7   -->
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-      
-      <!-- Custom CSS -->
-      <link rel="stylesheet" href="./CSS/index.css">
-   
+  <!-- Jquery and Bootstrap 3.3.7   -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-    <!-- AOS  -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./CSS/index.css">
 
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-G32E9ZLMKV"></script>
-    <script>
+
+  <!-- AOS  -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-G32E9ZLMKV"></script>
+  <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
 
     gtag('config', 'G-G32E9ZLMKV');
-    </script>
-    
+  </script>
+
 </head>
+
 <body>
-    
-    <section id="nav">
-      
-      <nav class="navbar">
-        <!-- LOGO -->
-        <div class="logo">
-          <img src="./assets/img_juet/gsdc_juet_hori_full_dark.png" alt="" srcset="">
-        </div>
-        <!-- NAVIGATION MENU -->
-        <div class="nav-menu">
-          <ul class="nav-links">
-            <!-- USING CHECKBOX HACK -->
-            <input type="checkbox" id="checkbox_toggle" />
-            <label for="checkbox_toggle" class="hamburger">&#9776;</label>
-            <!-- NAVIGATION MENUS -->
-            <div class="menu menu-mob">
-              <!-- <li><a href="index.html">Home</a></li> -->
-              <li><a href="#about">About</a></li>
-              <li><a href="/pages/teams.html">Team</a></li>
-              <li class="events_menu">
-                <a href="#events">Events</a>
-                <!-- DROPDOWN MENU -->
-                <!-- <ul class="dropdown">
+
+  <section id="nav">
+
+    <nav class="navbar">
+      <!-- LOGO -->
+      <div class="logo">
+        <img src="./assets/img_juet/gdsc_juet_hori.png" alt="" srcset="">
+      </div>
+      <!-- NAVIGATION MENU -->
+      <div class="nav-menu">
+        <ul class="nav-links">
+          <!-- USING CHECKBOX HACK -->
+          <input type="checkbox" id="checkbox_toggle" />
+          <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+          <!-- NAVIGATION MENUS -->
+          <div class="menu menu-mob">
+            <!-- <li><a href="index.html">Home</a></li> -->
+            <li><a href="#about">About</a></li>
+            <li><a href="/pages/teams.html">Team</a></li>
+            <li class="events_menu">
+              <a href="#events">Events</a>
+              <!-- DROPDOWN MENU -->
+              <!-- <ul class="dropdown">
                   <li><a href="/">2021</a></li>
                   <li><a href="/">2022</a></li>
                 </ul> -->
-              </li>
-              <li><a href="./pages/blogs.html">Blogs</a></li>
-              <!-- <li><a href="/">FAQ</a></li> -->
-              <li><a href="#footer">Contact</a></li>
-              <button class="button-join" id="btn_signup"> <a href="https://gdsc.community.dev/jaypee-university-of-engineering-and-technology-guna/">Join Us</a></button>
-            </div>
-          </ul>
-        </div>  
-      </nav> 
+            </li>
+            <li><a href="./pages/blogs.html">Blogs</a></li>
+            <!-- <li><a href="/">FAQ</a></li> -->
+            <li><a href="#footer">Contact</a></li>
+            <button class="button-join" id="btn_signup"> <a
+                href="https://gdsc.community.dev/jaypee-university-of-engineering-and-technology-guna/">Join
+                Us</a></button>
+          </div>
+        </ul>
+      </div>
+    </nav>
 
-    </section>
+  </section>
 
-    <section id="home">
-        <div class="container">
-            <div class="row">
-                <div class="col align-self-start">
-                    <div class="home-content">
-                        <h1><b>Google Developers Student Club</b></h1>
-                        <h2>Jaypee University of Engineering and Technology</h2>
-                        <p>
-                            <span class="intro_para">
-                                <span class="page__content">A community of<span style="color: rgb(15, 157, 88); font-weight: bolder;"> Developers</span>,<span style="color: rgb(219, 68, 55); font-weight: bolder;"> Designers</span> and<span style="color: rgb(66, 133, 244); font-weight: bolder;"> Programmers </span>who grow their knowledge in a peer-to-peer learning environment and build solutions for local businesses and their community.</span>
-                            </span>
-                        </p>
-                        <a href="https://developers.google.com/community/gdsc" class="btn btn-primary">Learn More</a>
-                    </div>
-                </div>
-                <div class="col align-self-end">
-                    <img src="./assets/studying_gif.gif" alt="" srcset="">
-                </div>
-            </div>
-        </div>
-        
-    </section>
-
-    <br>
-    <hr>
-
-    <section id="about">
-
-        <div class="outer-div">
-          <img class="guy-1" src="assets/guy-1.png" data-aos="fade-right" data-aos-duration="8000">
-          <img class="guy-2" src="assets/guy-2.png" data-aos="fade-left" data-aos-duration="8000">
-          <div id="whattoexpect" class="container-fluid">
-            <div class="container">
-              <div class="heading">
-                <span> What To Expect</span>
-              </div>
-              <div class="">
-                <div class="row">
-                  <div  class="d-flex flex-column text-center  whattoexpect-item col-md-4" data-aos="fade-down" data-aos-duration="2000">
-                  <h5>Workshops</h5>
-                  <p>
-                    Gain new skills with our intuitive workshops to: develop Android apps with Kotlin, build websites encompassing frontend and backend, develop apps that run on multiple platforms using Flutter, and others. 
-                  </p>
-                  </div>
-                  <div  class="d-flex flex-column text-center  whattoexpect-item col-md-4" data-aos="fade-down" data-aos-duration="2000">
-                    <h5>Guest Lectures and Industry Connections</h5>
-                    <p>Attend webinars by experts from leading firms in the Industry, on certain topics and Get the chance to know more people who are passionate about tech from around the world. </p>
-                    <!-- <h5>Solving Community Problems</h5> -->
-                   <!-- <p>
-                      Using the knowledge gained through workshops, identify and solve community problems with tech!
-                    </p> -->
-                  </div>
-                  <div  class="d-flex flex-column text-center  whattoexpect-item col-md-4" data-aos="fade-down" data-aos-duration="2000">
-                    <h5>Google Solutions Challenges</h5>
-                    <p>Participate in an annual, global contest that invites students from DSC communities to utilize Google technologies for solving local community problems. More info <a href="https://events.withgoogle.com/dsc-solution-challenge/" target="_">here</a>.</p>
-                  </div>
-                </div>
-                <div class="about_img">
-                  <img src="./assets/connections.webp" alt="" srcset="">
-                </div>
-              </div>
-            </div>
+  <section id="home">
+    <div class="container">
+      <div class="row">
+        <div class="col align-self-start">
+          <div class="home-content">
+            <h1><b>Google Developers Student Club</b></h1>
+            <h2>Jaypee University of Engineering and Technology</h2>
+            <p>
+              <span class="intro_para">
+                <span class="page__content">A community of<span style="color: rgb(15, 157, 88); font-weight: bolder;">
+                    Developers</span>,<span style="color: rgb(219, 68, 55); font-weight: bolder;"> Designers</span>
+                  and<span style="color: rgb(66, 133, 244); font-weight: bolder;"> Programmers </span>who grow their
+                  knowledge in a peer-to-peer learning environment and build solutions for local businesses and their
+                  community.</span>
+              </span>
+            </p>
+            <a href="https://developers.google.com/community/gdsc" class="btn btn-primary">Learn More</a>
           </div>
         </div>
-    </section>
+        <div class="col align-self-end">
+          <img src="./assets/studying_gif.gif" alt="" srcset="">
+        </div>
+      </div>
+    </div>
 
-    <hr>
-    
-    <section id="domains">
-      <div class="domainswehave">
+  </section>
+
+  <br>
+  <hr>
+
+  <section id="about">
+
+    <div class="outer-div">
+      <img class="guy-1" src="assets/guy-1.png" data-aos="fade-right" data-aos-duration="8000">
+      <img class="guy-2" src="assets/guy-2.png" data-aos="fade-left" data-aos-duration="8000">
+      <div id="whattoexpect" class="container-fluid">
         <div class="container">
           <div class="heading">
-            <span>Domains We Have</span>
+            <span> What To Expect</span>
           </div>
-        </div>
-        <div class=" domain_con">
-          <div class="domain_names container-fluid">
-            <div class="flex_divide ML" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
-              <div class="content">
-                <h2 class="domain-header">Machine Learning</h2>
-                <p class="domain-desc">
-                  Machine learning is the burning topic of the market. It is an application of artificial intelligence (AI)
-                  that provides systems, the ability to automatically learn and improve from experience without being 
-                  explicitly programmed.
-                </p> 
+          <div class="">
+            <div class="row">
+              <div class="d-flex flex-column text-center  whattoexpect-item col-md-4" data-aos="fade-down"
+                data-aos-duration="2000">
+                <h5>Workshops</h5>
+                <p>
+                  Gain new skills with our intuitive workshops to: develop Android apps with Kotlin, build websites
+                  encompassing frontend and backend, develop apps that run on multiple platforms using Flutter, and
+                  others.
+                </p>
               </div>
-              <div class="image">
-                <img src="./assets/machine_learning.png" alt="">
+              <div class="d-flex flex-column text-center  whattoexpect-item col-md-4" data-aos="fade-down"
+                data-aos-duration="2000">
+                <h5>Guest Lectures and Industry Connections</h5>
+                <p>Attend webinars by experts from leading firms in the Industry, on certain topics and Get the chance
+                  to know more people who are passionate about tech from around the world. </p>
+                <!-- <h5>Solving Community Problems</h5> -->
+                <!-- <p>
+                      Using the knowledge gained through workshops, identify and solve community problems with tech!
+                    </p> -->
               </div>
-            </div>           
-            <div class="flex_divide mob-dev domains-bg" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
-              <div class="image">
-                <img src="./assets/app_ios_dev.svg" alt="">
-              </div>
-              <div class="content">
-                <h2 class="domain-header">Android/IOS Development</h2>
-                <p class="domain-desc">
-                  Mobile app development has been steadily growing, in revenues and jobs created. In this domain and all
-                  others, we encourage all to keep practising and learning all the new upcoming things and be their
-                  best selves.
-                </p> 
-              </div>
-            </div>
-            <div class="flex_divide web-dev" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
-              <div class="content">
-                <h2 class="domain-header">Web Development</h2>
-                <p class="domain-desc">
-                  In this domain, we concentrate on developing and maintaining websites to solve real time problems. For any website, 
-                  it's the work that happens behind the scenes to make a website look great, work fast and perform well with a seamless 
-                  user experience.
-                </p> 
-              </div>
-              <div class="image">
-                <img src="./assets/web_dev.gif" alt="">
+              <div class="d-flex flex-column text-center  whattoexpect-item col-md-4" data-aos="fade-down"
+                data-aos-duration="2000">
+                <h5>Google Solutions Challenges</h5>
+                <p>Participate in an annual, global contest that invites students from DSC communities to utilize Google
+                  technologies for solving local community problems. More info <a
+                    href="https://events.withgoogle.com/dsc-solution-challenge/" target="_">here</a>.</p>
               </div>
             </div>
-            <div class="flex_divide cloud domains-bg" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
-              <div class="image">
-                <img src="./assets/cloud.gif" alt="">
-              </div>
-              <div class="content">
-                <h2 class="domain-header">Cloud and DevOps</h2>
-                <p class="domain-desc">
-                  Cloud Computing has become the backbone of many IT solutions and
-                  operations for the past decade. And it will continue to do so for the coming years. 
-                  It appears that the demand for skills in Cloud computing has been on the 
-                  rise with no signs of slowing down thus we aim to learn and create cloud based solutions for applications. 
-                </p> 
-              </div>
+            <div class="about_img">
+              <img src="./assets/connections.webp" alt="" srcset="">
             </div>
-            <div class="flex_divide cp" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
-              <div class="content">
-                <h2 class="domain-header">Competitive Programming</h2>
-                <p class="domain-desc">
-                  With ever-increasing competition in the IT industry, learn how to keep your knowledge sharp with competitive programming and practical usecases of Data Structures and Algorithms. It will enhance your problem solving skills, logic and many more.
-                </p> 
-              </div>
-              <div class="image">
-                <img src="./assets/competitive_prog.png" alt="">
-              </div>
-            </div>             
-            <div class="flex_divide ui-ux" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
-              <div class="image">
-                <img src="./assets/UI_UX.svg" alt="">
-              </div>
-              <div class="content">
-                <h2 class="domain-header">UI/UX Designing</h2>
-                <p class="domain-desc">
-                  UX (user experience) and UI (user interface) are two interdependent terms.
-                  While UI generally deals with the interaction between users and computer systems,
-                  software and applications,UX deals more generally with a user's overall 
-                  experience with a brand, product or service.
-                </p> 
-              </div>
-            </div>
-            <div class="flex_divide blockchain domains-bg" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
-              <div class="content">
-                <h2 class="domain-header">Blockchain </h2>
-                <p class="domain-desc">
-                  Blockchain is a specific type of data structure that provides a digital, decentralized transaction ledger which 
-                  cannot be changed or corrupted. Blockchain technology gained popularity due to its role as the framework behind 
-                  Bitcoin but the applications of blockchain go beyond cryptocurrency.
-                </p> 
-              </div>
-              <div class="image">
-                <img src="./assets/blockchain_dev.gif" alt="">
-              </div>
-            </div>
-                      
           </div>
         </div>
       </div>
-    </section>
-    <br>
-    <hr>
-    <section id="events">
-      
+    </div>
+  </section>
+
+  <hr>
+
+  <section id="domains">
+    <div class="domainswehave">
       <div class="container">
         <div class="heading">
-          <span>Recent Events</span>
-        </div>  
-        <div class="carousel-container">
-          <div class="mySlides animate">
-            <img src="./assets/events_juet/intro_gdsc.png" alt="slide" />
-            <!-- <div class="number">1 / 5</div> -->
-            <!-- <button class="text">Register Now!</button> -->
-          </div>
-          
-          <div class="mySlides animate">
-            <img src="./assets/events_juet/30_days_of_cloud.png" alt="slide" />
-            <!-- <div class="number">2 / 5</div> -->
-            <!-- <button class="text">Register Now!</button> -->
-          </div>
-          
-          <div class="mySlides animate">
-            <img src="./assets/events_juet/flutter_festival_event.png" alt="slide" />
-            <!-- <div class="number">3 / 5</div> -->
-            <!-- <button class="text">Register Now!</button> -->
-          </div>
-          
-          <!-- <div class="mySlides animate"> -->
-            <!-- <img src="./img_juet/Developer Student Clubs.png" alt="slide" /> -->
-            <!-- <div class="number">4 / 5</div> -->
-            <!-- <button class="text">Register Now!</button> -->
-          <!-- </div> -->
-          
-          <!-- <div class="mySlides animate"> -->
-            <!-- <img src="./img_juet/Developer Student Clubs.png" alt="slide" /> -->
-            <!-- <div class="number">5 / 5</div> -->
-            <!-- <button class="text">Register Now!</button>   -->                          <!-- Soon to be added with a Modal Box  -->
-          <!-- </div> -->
-          
-          <!-- Next and previous buttons -->
-          <a class="prev" onclick="prevSlide()">&#10094;</a>
-          <a class="next" onclick="nextSlide()">&#10095;</a>
-          
-          <!-- The dots/circles -->
-          <div class="dots-container">
-            <span class="dots" onclick="currentSlide(1)"></span>
-            <span class="dots" onclick="currentSlide(2)"></span>
-            <span class="dots" onclick="currentSlide(3)"></span>
-            <!-- <span class="dots" onclick="currentSlide(4)"></span> -->
-            <!-- <span class="dots" onclick="currentSlide(5)"></span> -->
-          </div>
+          <span>Domains We Have</span>
         </div>
-        
       </div>
-    
-    </section>
-
-    <br>
-    <hr>
-    <br>
-
-    <section id="sponsors">
-      
-    </section>
-    <section id="contact">
-      
-    </section>
-
-    <br>
-
-    <section id="footer">
-
-      <div class="footer">
-        <div class="inner-footer">
-      
-       
-          <div class="footer-items cprimg">
-              <img src="./assets/img_juet/gdsc_juet_hori_short.png" alt="">
-              <p> &#169 All Rights Reserved | GDSC@JUET 2022</p>
+      <div class=" domain_con">
+        <div class="domain_names container-fluid">
+          <div class="flex_divide ML" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+            <div class="content">
+              <h2 class="domain-header">Machine Learning</h2>
+              <p class="domain-desc">
+                Machine learning is the burning topic of the market. It is an application of artificial intelligence
+                (AI)
+                that provides systems, the ability to automatically learn and improve from experience without being
+                explicitly programmed.
+              </p>
+            </div>
+            <div class="image">
+              <img src="./assets/machine_learning.png" alt="">
+            </div>
+          </div>
+          <div class="flex_divide mob-dev domains-bg" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+            <div class="image">
+              <img src="./assets/app_ios_dev.svg" alt="">
+            </div>
+            <div class="content">
+              <h2 class="domain-header">Android/IOS Development</h2>
+              <p class="domain-desc">
+                Mobile app development has been steadily growing, in revenues and jobs created. In this domain and all
+                others, we encourage all to keep practising and learning all the new upcoming things and be their
+                best selves.
+              </p>
+            </div>
+          </div>
+          <div class="flex_divide web-dev" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+            <div class="content">
+              <h2 class="domain-header">Web Development</h2>
+              <p class="domain-desc">
+                In this domain, we concentrate on developing and maintaining websites to solve real time problems. For
+                any website,
+                it's the work that happens behind the scenes to make a website look great, work fast and perform well
+                with a seamless
+                user experience.
+              </p>
+            </div>
+            <div class="image">
+              <img src="./assets/web_dev.gif" alt="">
+            </div>
+          </div>
+          <div class="flex_divide cloud domains-bg" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+            <div class="image">
+              <img src="./assets/cloud.gif" alt="">
+            </div>
+            <div class="content">
+              <h2 class="domain-header">Cloud and DevOps</h2>
+              <p class="domain-desc">
+                Cloud Computing has become the backbone of many IT solutions and
+                operations for the past decade. And it will continue to do so for the coming years.
+                It appears that the demand for skills in Cloud computing has been on the
+                rise with no signs of slowing down thus we aim to learn and create cloud based solutions for
+                applications.
+              </p>
+            </div>
+          </div>
+          <div class="flex_divide cp" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+            <div class="content">
+              <h2 class="domain-header">Competitive Programming</h2>
+              <p class="domain-desc">
+                With ever-increasing competition in the IT industry, learn how to keep your knowledge sharp with
+                competitive programming and practical usecases of Data Structures and Algorithms. It will enhance your
+                problem solving skills, logic and many more.
+              </p>
+            </div>
+            <div class="image">
+              <img src="./assets/competitive_prog.png" alt="">
+            </div>
+          </div>
+          <div class="flex_divide ui-ux" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+            <div class="image">
+              <img src="./assets/UI_UX.svg" alt="">
+            </div>
+            <div class="content">
+              <h2 class="domain-header">UI/UX Designing</h2>
+              <p class="domain-desc">
+                UX (user experience) and UI (user interface) are two interdependent terms.
+                While UI generally deals with the interaction between users and computer systems,
+                software and applications,UX deals more generally with a user's overall
+                experience with a brand, product or service.
+              </p>
+            </div>
+          </div>
+          <div class="flex_divide blockchain domains-bg" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+            <div class="content">
+              <h2 class="domain-header">Blockchain </h2>
+              <p class="domain-desc">
+                Blockchain is a specific type of data structure that provides a digital, decentralized transaction
+                ledger which
+                cannot be changed or corrupted. Blockchain technology gained popularity due to its role as the framework
+                behind
+                Bitcoin but the applications of blockchain go beyond cryptocurrency.
+              </p>
+            </div>
+            <div class="image">
+              <img src="./assets/blockchain_dev.gif" alt="">
+            </div>
           </div>
 
-          <div class="footer-items">
-            <h3>Programs</h3>
-            <div class="border1"></div> 
-            <ul> 
-              <a href="https://www.womentechmakers.com/"><li>Woman Techmakers</li></a>
-              <a href="https://developers.google.com/experts/"><li>Google Developer Experts</li></a>
-              <a href="https://developers.google.com/programs/community/"><li>Google Developer Groups</li></a>
-            </ul>
-          </div>
-      
-      <!--  for some other links -->
-          <div class="footer-items">
-            <h3>Developers</h3>
-            <div class="border1"></div>  <!--for the underline -->
-              <ul>
-                <a href="https://console.firebase.google.com/"><li>Firebase Console</li></a>
-                <a href="https://console.cloud.google.com/"><li>Google Cloud Platform</li></a>
-                <a href="https://console.actions.google.com/"><li>Actions on Google</li></a>
-              </ul>
-          </div>
-      
-      <!--  for contact us info -->
-          <div class="footer-items">
-            <h3>Contribute</h3>
-            <div class="border1"></div>
-              <ul>
-                  
-                <a href="https://github.com/GDSCJUET/GDSCJUET.github.io"><li>View Source</li></a>
-                <a href="https://github.com/GDSCJUET/GDSCJUET.github.io/issues/new/choose"><li>File a Bug</li></a>
-                
-              </ul>
-            
-      <!--   for social links -->
-              <!-- <div class="social-media">
-                <a href="#"></a>
-                <a href="#"></a>
-                <a href="#"></a>
-              </div>  -->
-          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br>
+  <hr>
+  <section id="events">
+
+    <div class="container">
+      <div class="heading">
+        <span>Recent Events</span>
+      </div>
+      <div class="carousel-container">
+        <div class="mySlides animate">
+          <img src="./assets/events_juet/intro_gdsc.png" alt="slide" />
+          <!-- <div class="number">1 / 5</div>
+          <button class="text">Register Now!</button> -->
         </div>
 
-    </section>
-    
-    <section class="footerclose">
-      <p>Engineered by Web-Team GDSC - JUET</p>          
-    </section>
+        <div class="mySlides animate">
+          <img src="./assets/events_juet/30_days_of_cloud.png" alt="slide" />
+          <!-- <div class="number">2 / 5</div>
+          <button class="text">Register Now!</button> -->
+        </div>
 
-    <!-- <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
-    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/CSSRulePlugin3.min.js"></script> -->
-    
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.2/CSSRulePlugin.min.js"></script> -->
-    
-      <!-- Animate on Scroll JS cdn; also follow me on github iamv1n-->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>  
-    <script src="./src/carousel.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    
-    <script>
-      AOS.init();
-    </script>
+        <div class="mySlides animate">
+          <img src="./assets/events_juet/flutter_festival_event.png" alt="slide" />
+          <!-- <div class="number">3 / 5</div>
+          <button class="text">Register Now!</button> -->
+        </div>
+
+        <!-- <div class="mySlides animate"> -->
+        <!-- <img src="./img_juet/Developer Student Clubs.png" alt="slide" /> -->
+        <!-- <div class="number">4 / 5</div> -->
+        <!-- <button class="text">Register Now!</button> -->
+        <!-- </div> -->
+
+        <!-- <div class="mySlides animate"> -->
+        <!-- <img src="./img_juet/Developer Student Clubs.png" alt="slide" /> -->
+        <!-- <div class="number">5 / 5</div> -->
+        <!-- <button class="text">Register Now!</button>   -->
+        <!-- Soon to be added with a Modal Box  -->
+        <!-- </div> -->
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="prevSlide()">&#10094;</a>
+        <a class="next" onclick="nextSlide()">&#10095;</a>
+
+        <!-- The dots/circles -->
+        <div class="dots-container">
+          <span class="dots" onclick="currentSlide(1)"></span>
+          <span class="dots" onclick="currentSlide(2)"></span>
+          <span class="dots" onclick="currentSlide(3)"></span>
+          <!-- <span class="dots" onclick="currentSlide(4)"></span> -->
+          <!-- <span class="dots" onclick="currentSlide(5)"></span> -->
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <br>
+  <hr>
+  <br>
+
+  <section id="sponsors">
+
+  </section>
+  <section id="contact">
+
+  </section>
+
+  <br>
+
+  <section id="footer">
+
+    <div class="footer">
+      <div class="inner-footer">
+
+
+        <div class="footer-items cprimg">
+          <img src="./assets/img_juet/gdsc_juet_hori_short.png" alt="">
+          <p> &#169 All Rights Reserved | GDSC@JUET 2022</p>
+        </div>
+
+        <div class="footer-items">
+          <h3>Programs</h3>
+          <div class="border1"></div>
+          <ul>
+            <a href="https://www.womentechmakers.com/">
+              <li>Woman Techmakers</li>
+            </a>
+            <a href="https://developers.google.com/experts/">
+              <li>Google Developer Experts</li>
+            </a>
+            <a href="https://developers.google.com/programs/community/">
+              <li>Google Developer Groups</li>
+            </a>
+          </ul>
+        </div>
+
+        <!--  for some other links -->
+        <div class="footer-items">
+          <h3>Developers</h3>
+          <div class="border1"></div>
+          <!--for the underline -->
+          <ul>
+            <a href="https://console.firebase.google.com/">
+              <li>Firebase Console</li>
+            </a>
+            <a href="https://console.cloud.google.com/">
+              <li>Google Cloud Platform</li>
+            </a>
+            <a href="https://console.actions.google.com/">
+              <li>Actions on Google</li>
+            </a>
+          </ul>
+        </div>
+
+        <!--  for contact us info -->
+        <div class="footer-items">
+          <h3>Contribute</h3>
+          <div class="border1"></div>
+          <ul>
+
+            <a href="https://github.com/GDSCJUET/GDSCJUET.github.io">
+              <li>View Source</li>
+            </a>
+            <a href="https://github.com/GDSCJUET/GDSCJUET.github.io/issues/new/choose">
+              <li>File a Bug</li>
+            </a>
+
+          </ul>
+
+          <!--   for social links -->
+          <!-- <div class="social-media">
+                <a href="#">d</a>
+                <a href="#">s</a>
+                <a href="#">df</a>
+              </div>  -->
+        </div>
+      </div>
+
+  </section>
+
+  <section class="footerclose">
+    <p>Engineered by Web-Team GDSC - JUET</p>
+  </section>
+  
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="./src/carousel.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+  <script>
+    AOS.init();
+  </script>
 
 
 </body>
+
 </html>

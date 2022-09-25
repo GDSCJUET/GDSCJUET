@@ -62,3 +62,23 @@ setInterval(() => {
 
 
 
+$(function() {
+  $('a[href*=#]').on('click', function(e) {
+    e.preventDefault();
+    $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
+  });
+});
+
+
+
+
+let hamburger = document.querySelector(".hamburger");
+let menu = document.querySelector(".menu");
+hamburger.addEventListener("click", function () {
+  hamburger.classList.toggle("is-active");
+  if (menu.classList.contains("active")) {
+    menu.classList.remove("active");
+  } else {  
+    menu.classList.add("active");
+  }
+});
