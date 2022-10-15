@@ -1,5 +1,7 @@
+
+<p align="center" width="100%">
 <img align="center" src="https://github.com/GDSCJUET/GDSCJUET.github.io/blob/stable/assets/img_juet/gdsc_juet_hori.png"/>
-<br>
+</p>
 
 ## DSC JUET's Website
 
