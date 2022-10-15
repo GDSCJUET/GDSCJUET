@@ -3,30 +3,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Teko&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&family=Zilla+Slab:wght@300&display=swap');
 
-/* UTILITIES */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-a {
-    text-decoration: none;
-}
-
-li {
-    list-style: none;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    margin: 0px;
-    padding: 0px;
-}
-
 :root {
     margin: 0px;
     padding: 0px;
