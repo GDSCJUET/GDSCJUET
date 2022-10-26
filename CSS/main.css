@@ -375,5 +375,10 @@ li i {
         height: auto;
         margin: auto;
     }
+    
+    .icon-row img{
+        height:30px;
+        margin: 5px;
+    }
 
 }
