@@ -325,6 +325,17 @@ li i {
     transform: scale(1.5);
 }
 
+.icon-row{
+    text-align: center;
+    display: inline-flex;
+}
+
+.icon-row img{
+    flex: auto;
+    height:35px;
+    margin: 5px;
+}
+
 .footerclose {
     padding: 10px;
     margin: 0%;
